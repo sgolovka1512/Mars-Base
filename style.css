@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    color: white;
+    overflow-x: hidden;
+    background: radial-gradient(circle at center, #3b1f14, #0b0b0b);
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/dust.png");
+    opacity: 0.2;
+    animation: moveDust 20s linear infinite;
+}
+
+@keyframes moveDust {
+    from {background-position: 0 0;}
+    to {background-position: 500px 500px;}
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff6a00;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {text-shadow: 0 0 5px #ff6a00;}
+    to {text-shadow: 0 0 20px #ff6a00;}
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.story {
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-left: 4px solid #ff6a00;
+    min-height: 120px;
+    border-radius: 10px;
+}
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #ff6a00;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ffa733;
+    transform: scale(1.1);
+}
+
+.stats {
+    margin-top: 20px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.info {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-left: 4px solid #ff6a00;
+    min-height: 120px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+}
